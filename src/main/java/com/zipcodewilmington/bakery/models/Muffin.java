@@ -1,9 +1,14 @@
 package com.zipcodewilmington.bakery.models;
 
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.Objects;
-
+@Entity
+@RequestMapping("/muffin")
 public class Muffin {
-
+@Id
     private Long id;
 
     private String flavor;
